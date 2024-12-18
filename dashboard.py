@@ -84,7 +84,7 @@ contaminantes = {
 }
 
 # Cargar datos del archivo CSV
-csv = '/Users/sparkmachine/Downloads/rama_2023_05.csv'
+csv = 'rama_2023_05.csv'
 Rama = pd.read_csv(csv)
 Rama["fecha"] = pd.to_datetime(Rama["fecha"])
 Rama.set_index('fecha', inplace=True)
