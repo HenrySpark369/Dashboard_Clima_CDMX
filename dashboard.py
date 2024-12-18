@@ -545,4 +545,4 @@ def actualizar_dashboard(n_intervals):
 # Ejecutar el servidor
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))  # Render pasa el puerto a través de la variable de entorno PORT
-    app.run_server(host="0.0.0.0", port=port, debug=False)
+    app.run_server(host="0.0.0.0", port=port, debug=True)
