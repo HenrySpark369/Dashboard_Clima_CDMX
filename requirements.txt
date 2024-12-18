@@ -6,3 +6,4 @@ numpy
 requests
 scikit-learn
 gunicorn
+flask==2.0.1
