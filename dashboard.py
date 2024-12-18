@@ -106,6 +106,8 @@ ESTILO_TEXTO_TITULO = {
 
 # Inicializar la aplicación Dash con el tema Sketchy
 app = Dash(__name__, external_stylesheets=[dbc.themes.SKETCHY])
+server = app.server  # Exponer el servidor Flask
+
 
 # Layout de la aplicación
 app.layout = dbc.Container([
