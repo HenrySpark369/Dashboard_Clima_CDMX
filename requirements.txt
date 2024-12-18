@@ -6,4 +6,5 @@ numpy
 requests
 scikit-learn
 gunicorn
-flask==2.0.1
+flask>=2.0.0
+werkzeug>=2.0.0
