@@ -13,6 +13,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import numpy as np
 from datetime import datetime, timedelta
+import os
+
 
 # URL y cabeceras para la solicitud
 url = "https://smn.conagua.gob.mx/tools/GUI/webservices/"
@@ -84,7 +86,7 @@ contaminantes = {
 }
 
 # Cargar datos del archivo CSV
-csv = 'rama_2023_05.csv'
+csv = os.path.join(os.getcwd(), 'rama_2023_05.csv')
 Rama = pd.read_csv(csv)
 Rama["fecha"] = pd.to_datetime(Rama["fecha"])
 Rama.set_index('fecha', inplace=True)
